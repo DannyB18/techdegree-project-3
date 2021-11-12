@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -35,7 +35,8 @@
                 <label for="city">City</label>
                 <input type="text" id="city" name="user-city">
                 <label for="state">State</label>
-                <select id="state" name="user-state">
+                <select id="state" name="user-state" placeholder="Choose State">
+                    <option value="" disabled>Choose State</option>
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AZ">Arizona</option>
@@ -95,16 +96,16 @@
                 <legend>Newsletter</legend>
                 <label>Select the newsletters you would like to receive</label>
                 <input type="checkbox" id="html-news" value="html-news" name="newsletter">
-                <label for="html-news">HTML News</label><br>
+                <label for="html-news">HTML News</label>
                 <input type="checkbox" id="css-news" value="css-news" name="newsletter">
-                <label for="css-news">CSS News</label><br>
+                <label for="css-news">CSS News</label>
                 <input type="checkbox" id="js-news" value="js-news" name="newsletter">
                 <label for="js-news">Javascript News</label>
-                <label>Newsletter format</label><br>
+                <label>Newsletter format</label>
                 <input type="radio" id="html-format" value="html-format" name="format">
-                <label for="html-format">HTML</label><br>
+                <label for="html-format">HTML</label>
                 <input type="radio" id="plaintext-format" value="plaintext-format" name="format">
-                <label for="plaintext-format">Plain Text</label><br>
+                <label for="plaintext-format">Plain Text</label>
                 <label for="other-topics">Other topics you'd like to hear about</label>
                 <textarea id="other-topics" name="othere-topics"></textarea>
                 <button type="submit">Sign Up</button>
@@ -112,7 +113,7 @@
         </form>
     </main>
     <footer>
-        <span>Copyright The Code Review</span>
+        <span class="copyright">Copyright The Code Review</span>
     </footer>
 </body>
 </html>

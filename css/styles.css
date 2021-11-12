@@ -23,6 +23,60 @@ h1 {
   font-size: 25px;
 }
 
+h2 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.intro p {
+  margin: 0.5rem 0;
+  color: #aaa;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  border-top: 2px solid #2d3945;
+  padding: 0 0 30px 0;
+  margin: 3px 0;
+}
+
+fieldset legend {
+  float: left;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 25px 0;
+}
+
+label {
+  color: #55687a;
+}
+
+label:not(:first-of-type) {
+  margin-top: 15px;
+}
+
+input,
+select,
+textarea {
+  display: block;
+  background: #eee;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+#zip {
+  width: 175px;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
 .banner {
   background: #2d3945;
   color: white;
@@ -31,43 +85,30 @@ h1 {
 
 .intro {
   border-bottom: 5px solid #2d3945;
+  padding: 1rem 0;
 }
 
-fieldset {
-  display: flex;
-  flex-direction: column;
-  border: 0;
-  border-top: 2px solid #2d3945;
-  margin: 3px 0;
-}
-
-fieldset legend {
-  float: left;
-  font-size: 1.3rem;
-  font-weight: 700;
-}
-/* fieldset {
-  border: 0;
-  border-top: 2px solid #2d3945;
-  position: relative;
-  padding-top: 35px;
-  margin: 3px 0;
-}
-
-fieldset legend {
-  position: absolute;
-  margin-top: -30px;
-  font-size: 1.3rem;
-  font-weight: 700;
-} */
-
-input,
-select {
+.copyright {
   display: block;
+  font-size: 14px;
+  text-align: center;
 }
 
-input:focus {
-  border: 2px solid #2d3945;
+#newsletter {
+  display: flex;
+  flex-direction: row;
+}
+
+::placeholder {
+  text-align: right;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #aaa;
+}
+
+:focus {
+  outline: none;
+  outline: 2px solid #436f9c;
 }
 
 @media screen and (min-width: 768px) {
