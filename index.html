@@ -25,9 +25,9 @@
             <fieldset id="contact">
                 <legend>Contact Information</legend>
                 <label for="name">Full Name</label>
-                <input type="text" id="name" name="user-name" placeholder="Required">
+                <input type="text" id="name" name="user-name" placeholder="Required" required>
                 <label for="email">Email Address</label>
-                <input type="email" id="email" name="user-email" placeholder="Required">
+                <input type="email" id="email" name="user-email" placeholder="Required" required>
                 <label for="phone">Phone Number</label>
                 <input type="tel" id="phone" name="user-phone">
                 <label for="address">Street Address</label>
@@ -96,16 +96,16 @@
                 <legend>Newsletter</legend>
                 <label>Select the newsletters you would like to receive</label>
                 <input type="checkbox" id="html-news" value="html-news" name="newsletter">
-                <label for="html-news">HTML News</label>
+                <label for="html-news" class="inline">HTML News</label>
                 <input type="checkbox" id="css-news" value="css-news" name="newsletter">
-                <label for="css-news">CSS News</label>
+                <label for="css-news" class="inline">CSS News</label>
                 <input type="checkbox" id="js-news" value="js-news" name="newsletter">
-                <label for="js-news">Javascript News</label>
+                <label for="js-news" class="inline">Javascript News</label>
                 <label>Newsletter format</label>
                 <input type="radio" id="html-format" value="html-format" name="format">
-                <label for="html-format">HTML</label>
+                <label for="html-format" class="inline">HTML</label>
                 <input type="radio" id="plaintext-format" value="plaintext-format" name="format">
-                <label for="plaintext-format">Plain Text</label>
+                <label for="plaintext-format" class="inline">Plain Text</label>
                 <label for="other-topics">Other topics you'd like to hear about</label>
                 <textarea id="other-topics" name="othere-topics"></textarea>
                 <button type="submit">Sign Up</button>

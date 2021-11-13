@@ -30,6 +30,11 @@ h2 {
 
 .intro p {
   margin: 0.5rem 0;
+}
+
+intro p,
+.copyright,
+::placeholder {
   color: #aaa;
 }
 
@@ -75,6 +80,8 @@ textarea {
 textarea {
   overflow: auto;
   resize: none;
+  margin: 20px 0;
+  height: 125px;
 }
 
 .banner {
@@ -85,25 +92,36 @@ textarea {
 
 .intro {
   border-bottom: 5px solid #2d3945;
-  padding: 1rem 0;
+  padding: 30px 0;
 }
 
 .copyright {
   display: block;
   font-size: 14px;
   text-align: center;
+  margin-bottom: 30px;
+  font-style: italic;
 }
 
-#newsletter {
-  display: flex;
-  flex-direction: row;
+button[type="submit"] {
+  background-color: lightseagreen;
+  color: white;
+  padding: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+}
+
+#newsletter label,
+#newsletter input {
+  display: inline;
 }
 
 ::placeholder {
   text-align: right;
   font-size: 0.9rem;
   font-style: italic;
-  color: #aaa;
 }
 
 :focus {
