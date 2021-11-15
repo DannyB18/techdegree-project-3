@@ -176,7 +176,7 @@ button[type="submit"]:active {
     display: flex;
     flex-direction: column;
     margin: auto;
-    max-width: 768px;
+    max-width: 752px;
   }
 
   #contact .container {
@@ -193,7 +193,7 @@ button[type="submit"]:active {
 
   #zip {
     max-width: 25%;
-    margin-right: 389px;
+    margin-right: 379px;
   }
 
   fieldset {
