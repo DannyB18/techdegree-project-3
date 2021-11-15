@@ -6,6 +6,7 @@ body {
   font-size: 1.1em;
   line-height: 1.5;
   font-family: "Merriweather", serif;
+  background-color: lightgrey;
 }
 
 main,
@@ -16,6 +17,7 @@ main,
 header,
 .banner {
   text-align: center;
+  background-color: lightyellow;
 }
 
 h1 {
@@ -89,7 +91,7 @@ textarea {
 }
 
 #zip {
-  max-width: 175px;
+  max-width: 50%;
 }
 
 select {
@@ -147,6 +149,10 @@ button[type="submit"] {
   border-radius: 5px;
 }
 
+button[type="submit"]:active {
+  background-color: #4bc970;
+}
+
 ::placeholder {
   text-align: right;
   font-size: 0.9rem;
@@ -155,11 +161,18 @@ button[type="submit"] {
 
 :focus {
   outline: none;
-  outline: 2px solid #436f9c;
+  outline: 5px solid #436f9c;
+  transition-duration: 0.5s;
+}
+
+:focus {
+  outline: 5px solid #436f9c;
 }
 
 @media screen and (min-width: 768px) {
-  .wrapper {
+  .intro,
+  main,
+  footer {
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -179,7 +192,8 @@ button[type="submit"] {
   }
 
   #zip {
-    margin-right: 377px;
+    max-width: 25%;
+    margin-right: 389px;
   }
 
   fieldset {
