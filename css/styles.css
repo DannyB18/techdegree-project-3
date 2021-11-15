@@ -54,12 +54,26 @@ fieldset legend {
   padding: 25px 0;
 }
 
+#contact p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#contact p > input {
+  width: 100%;
+}
+
 label {
   color: #55687a;
 }
 
 label:not(:first-of-type) {
-  margin-top: 15px;
+  margin-top: 20px;
+}
+
+#newsletter p > label {
+  margin-left: 10px;
 }
 
 input,
@@ -74,7 +88,11 @@ textarea {
 }
 
 #zip {
-  width: 175px;
+  max-width: 175px;
+}
+
+select {
+  width: 100%;
 }
 
 textarea {
@@ -82,6 +100,12 @@ textarea {
   resize: none;
   margin: 20px 0;
   height: 125px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin: 0.3rem 0;
 }
 
 .banner {
@@ -93,6 +117,14 @@ textarea {
 .intro {
   border-bottom: 5px solid #2d3945;
   padding: 30px 0;
+}
+
+.newsletter-segment {
+  margin-bottom: 0.5rem;
+}
+
+.newsletter-segment:not(:first-of-type) {
+  margin-top: 2rem;
 }
 
 .copyright {
@@ -113,11 +145,6 @@ button[type="submit"] {
   border-radius: 5px;
 }
 
-#newsletter label,
-#newsletter input {
-  display: inline;
-}
-
 ::placeholder {
   text-align: right;
   font-size: 0.9rem;
@@ -130,4 +157,7 @@ button[type="submit"] {
 }
 
 @media screen and (min-width: 768px) {
+  .container {
+    justify-content: space-between;
+  }
 }
