@@ -13,7 +13,8 @@ main,
   margin: 0 1rem;
 }
 
-header {
+header,
+.banner {
   text-align: center;
 }
 
@@ -32,7 +33,7 @@ h2 {
   margin: 0.5rem 0;
 }
 
-intro p,
+.intro > p,
 .copyright,
 ::placeholder {
   color: #aaa;
@@ -139,6 +140,7 @@ button[type="submit"] {
   background-color: lightseagreen;
   color: white;
   padding: 1.25rem;
+  margin: 1rem 0;
   font-size: 1.5rem;
   font-weight: 700;
   border: none;
@@ -157,7 +159,30 @@ button[type="submit"] {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 768px;
+  }
+
+  #contact .container {
+    flex-direction: row;
+    flex-direction: row;
     justify-content: space-between;
+  }
+
+  #contact label {
+    width: 250px;
+    max-width: 250px;
+    margin: auto 0;
+  }
+
+  #zip {
+    margin-right: 377px;
+  }
+
+  fieldset {
+    padding-top: 2rem;
   }
 }
